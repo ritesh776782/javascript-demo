@@ -81,7 +81,7 @@ let grade = null;
 // Week days
 
 // create a application, which will print shortform of a day
-const day = "Fridajkfslfjdklsy";
+const day = "Friday";
 
 if (day === "Sunday") console.log("Sun");
 else if (day === "Monday") console.log("Mon");
