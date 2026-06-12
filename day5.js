@@ -115,7 +115,7 @@ for(let i = 100; i > 10; i++){
     console.log("dakshu", i)
 }
 
-// for(
+// for( 
     // declare a variable and give value to it;
     // codition --> boolean
     // operation
@@ -127,6 +127,7 @@ for(let i = 100; i > 10; i++){
 // do while
 // for loop
 // while loop
+
 
 
 

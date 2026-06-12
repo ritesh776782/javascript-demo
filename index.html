@@ -1,20 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+    <!-- Responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Page title shown in browser tab -->
+    <title>Basic HTML Commands</title>
+
+    <!-- Internal CSS -->
     <style>
-        h1 {
-            color: maroon;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
+        h1 { color: maroon; }
+        table { border-collapse: collapse; margin-top: 8px; }
+        th, td { border: 1px solid #999; padding: 8px 12px; }
     </style>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <p>this is ritesh</p>
-    <script
-        src="day7.js"
-    ></script>
+
+    <!-- ── HEADINGS ── -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <!-- ── PARAGRAPH & TEXT FORMATTING ── -->
+    <p>This is a <strong>bold</strong> word and this is an <em>italic</em> word.</p>
+    <p>This is <u>underlined</u> text and this is <mark>highlighted</mark> text.</p>
+    <p>Superscript: x<sup>2</sup> &nbsp; Subscript: H<sub>2</sub>O</p>
+
+    <!-- ── LINE BREAK & HORIZONTAL RULE ── -->
+    <p>Line one.<br>Line two (after a br tag).</p>
+    <hr>
+
+    <!-- ── LINKS ── -->
+    <a href="https://www.example.com" target="_blank">Open Example.com in new tab</a>
+
+    <!-- ── IMAGES ── -->
+    <!-- <img src="image.jpg" alt="Description of image" width="200"> -->
+    <p><em>(img tag commented out — replace src with a real path)</em></p>
+
+    <!-- ── UNORDERED LIST ── -->
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+
+    <!-- ── ORDERED LIST ── -->
+    <ol>
+        <li>Step one</li>
+        <li>Step two</li>
+        <li>Step three</li>
+    </ol>
+
+    <!-- ── TABLE ── -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ── FORM ── -->
+    <form action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter name">
+        <br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="in">India</option>
+            <option value="us">USA</option>
+        </select>
+        <br><br>
+
+        <label for="msg">Message:</label><br>
+        <textarea id="msg" name="msg" rows="3" cols="30"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- ── DIVS & SPANS ── -->
+    <div style="background:#f0f0f0; padding:10px; margin-top:12px;">
+        This is a <span style="color:blue;">div</span> with a
+        <span style="color:red;">span</span> inside it.
+    </div>
+
+    <!-- ── SCRIPT (link to external JS) ── -->
+    <script src="hwhw.js"></script>
+
 </body>
 </html>
